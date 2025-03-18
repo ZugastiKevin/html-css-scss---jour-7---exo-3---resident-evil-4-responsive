@@ -4,6 +4,10 @@
     font-weight: 400;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Roboto Regular";
@@ -24,6 +28,7 @@ header {
 }
 
 ul {
+    padding-left: 0px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -94,6 +99,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url(../img/banner.jpg);
     object-fit: cover;
     height: 45vh;
@@ -131,7 +137,7 @@ input {
 
 .cta-primary {
     margin-top: 1.1rem;
-    width: 8%;
+    width: 10%;
 }
 
 .cta-secondary {
@@ -141,7 +147,6 @@ input {
 .cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .card {
@@ -153,10 +158,11 @@ input {
 
 .card-content {
     margin: 2rem 0.5rem 2rem 1rem;
+    padding: 1rem;
 }
 
 .img-container {
-    height: 60%;
+    height: 20vh;
     max-height: 350px;
 }
 
@@ -196,4 +202,48 @@ input {
 
 #footer-menu li a {
     color: white;
+}
+
+@media screen and (max-width: 1322px) {
+    
+    .container-header-banner {
+        width: inherit;
+    }
+
+    .container {
+        width: inherit;
+    }
+
+    .cta-primary {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    #header-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
+    #header-menu li {
+        border-left: none;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
