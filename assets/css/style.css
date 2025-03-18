@@ -95,7 +95,8 @@ input {
     justify-content: center;
     align-items: center;
     background-image: url(../img/banner.jpg);
-    height: 65vh;
+    object-fit: cover;
+    height: 45vh;
 }
 
 #img-logo-banner {
